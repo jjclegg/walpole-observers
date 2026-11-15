@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Walpole Observer Timeline</title>
+<title>Walpole Takeover 1973: Observers&rsquo; Reports</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <style>
@@ -177,7 +177,7 @@ main{flex:1;min-height:0;display:grid;grid-template-columns:64px minmax(310px,31
 
 <header class="top">
   <div class="titlerow">
-    <h1 id="ttl">Walpole, March 1973: the observers&rsquo; reports</h1>
+    <h1 id="ttl">Walpole Takeover 1973: Observers&rsquo; Reports</h1>
     <span class="scope" id="scope"></span>
     <span class="status" id="status"></span>
   </div>
@@ -379,7 +379,6 @@ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(renderChips);
 
 const DATED=ALLDAYS.filter(d=>!und(d));
 $('#scope').textContent=`${D.reports.length} observer reports, ${E.length} entries, ${dm(DATED[0])} to ${dm(DATED[DATED.length-1])} 1973`;
-{const a=mon(DATED[0]),b=mon(DATED[DATED.length-1]);$('#ttl').textContent='Walpole, '+(a===b?a:a+'–'+b)+' 1973: the observers’ reports';}
 if(!E.some(visible)){active.clear();obs='';}
 if(!visible(E[sel])){const f=E.find(visible);if(f)sel=f.n;}
 renderObs();renderChips();renderTimeline();renderDays();renderReader(true);

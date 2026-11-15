@@ -1,4 +1,4 @@
-# Walpole, March–June 1973: the observers' reports
+# Walpole Takeover 1973: Observers' Reports
 
 A timeline of the civilian observers' reports from MCI Walpole, transcribed from the scans in the Walpole 1973 NPRA Digital Archive at Harvard.
 
