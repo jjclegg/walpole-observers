@@ -50,6 +50,9 @@ header.top{flex:none;position:relative;z-index:5;padding:18px 28px 14px;display:
 h1{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.1;letter-spacing:-.01em;margin:0;text-wrap:balance}
 .scope{color:var(--muted);font-size:13px}
 .status{margin-left:auto;font-size:13px;color:var(--muted);display:flex;align-items:baseline;gap:10px}
+.status:empty{display:none}
+.status:not(:empty)+.testflag{margin-left:0}
+.testflag{margin-left:auto;align-self:center;flex:none;font-size:11.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);border-radius:999px;padding:3px 10px;white-space:nowrap}
 .clear{border:0;background:none;color:var(--accent);font-size:13px;font-weight:500;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:2px}
 .filters{display:flex;flex-wrap:nowrap;gap:7px;align-items:center}
 .pick{flex:none;appearance:none;-webkit-appearance:none;height:30px;border:1px solid var(--rule);border-radius:999px;background-color:var(--sheet);padding:0 30px 0 12px;font-size:13px;font-weight:500;cursor:pointer;max-width:210px;text-overflow:ellipsis;
@@ -180,6 +183,7 @@ main{flex:1;min-height:0;display:grid;grid-template-columns:64px minmax(310px,31
     <h1 id="ttl">Walpole Takeover 1973: Observers&rsquo; Reports</h1>
     <span class="scope" id="scope"></span>
     <span class="status" id="status"></span>
+    <span class="testflag" title="This site is a test version and may change">Test version</span>
   </div>
   <div class="filters" id="filters">
     <select class="pick" id="obs" aria-label="Show one observer"></select>
